@@ -1,0 +1,124 @@
+.parallax-container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 100vh 40vh 60vh 30vh 25vh 75vh;
+}
+
+
+
+.forest-background {
+	grid-row: 1 / 5;
+	grid-column: 1 / 2;
+	background-image: url(../forest-2.png);
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -2;
+}
+
+.forest-background-2 {
+	grid-row: 3 / 4;
+	grid-column: 1 / 2;
+	background-image: url(../hiker-icon.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+	z-index: -3;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-row:  1 / 2;
+	grid-column: 1 / 2;
+	z-index: 2;
+}
+
+/*.text-section {
+	background-color: black;
+}*/
+
+
+header {
+	grid-row: 1 / 2;
+	align-content: center;
+	justify-content: center;
+	/*background-image: url(../Wilderness.jpg);
+	background-size: auto;
+	background-position: center;
+	background-attachment: fixed;*/
+	z-index: 2;
+}
+
+.background-gradient {
+	grid-row: 1 / 5;
+	grid-column: 1 / 2;
+	background: #16222A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #3A6073, #16222A, #111);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #3A6073, #16222A, #111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	z-index: -100;
+
+}
+
+.moon {
+	grid-row: 3 / 4;
+	grid-column: 1 / 2;
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+	z-index: -10;
+}
+
+.square {
+	height: auto;
+	width: 15%;
+	font-size: 80px;
+	font-weight: bold;
+	color: blue;
+	z-index: -1;
+}
+
+.square img {
+	position: relative;
+	top: -25vh;
+	width: 100%;
+}
+
+.release-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	text-align: center;
+	color: white;
+	background-color: #030303;
+}
+
+.hiker {
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
+	z-index: -10;
+}
+
+.hiker img {
+	position: relative;
+	top: 10vh;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+}
+
+.photo-section {
+	display: flex;
+	justify-content: center;
+	max-width: 1600px;
+	width: 80vw;
+}
+
+.photo-section div {
+	padding: 1em;
+}
+
+.photo-section img {
+	width: 100%;
+}
